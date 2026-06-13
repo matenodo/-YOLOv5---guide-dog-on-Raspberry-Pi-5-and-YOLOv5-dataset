@@ -44,14 +44,16 @@
 - 连接网络，执行系统更新：
   ```bash
   sudo apt update && sudo apt upgrade -y
-
-  # 安装系统工具
+  
+ # 安装系统工具
+ ```bash
 sudo apt install python3-pip python3-venv libopenblas-dev -y
 
 # 创建虚拟环境（推荐）
+```bash
 cd ~
 python3 -m venv yolov5_env
 source yolov5_env/bin/activate
-
 # 安装核心库
+```bash
 pip install numpy opencv-python pygame picamera2
