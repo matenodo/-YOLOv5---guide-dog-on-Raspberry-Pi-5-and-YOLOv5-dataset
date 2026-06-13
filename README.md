@@ -29,6 +29,22 @@
 - 运行环境：Python 3.9 + PyTorch 2.0（ARM64）+ OpenCV + ONNX Runtime
 - 检测模型：YOLOv5s 迁移学习训练 → 转换为 ONNX 格式（输入尺寸 416×416）
 - 语音引擎：pygame.mixer（预录 OGG 音频文件）
+- 
+## 一键安装与运行
+
+在树莓派终端中依次执行以下命令：
+
+```bash
+# 安装系统工具
+sudo apt install python3-pip python3-venv libopenblas-dev -y
+
+# 创建虚拟环境（推荐）
+cd ~
+python3 -m venv yolov5_env
+source yolov5_env/bin/activate
+
+# 安装核心库
+pip install numpy opencv-python pygame picamera2
 
 ## 📊 模型性能
 
