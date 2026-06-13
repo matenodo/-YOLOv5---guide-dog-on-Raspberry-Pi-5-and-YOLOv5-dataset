@@ -44,7 +44,7 @@ python3 -m venv yolov5_env
 source yolov5_env/bin/activate
 
 # 安装核心库
-pip install numpy opencv-python pygame picamera2
+pip install numpy opencv-python pygame picamera2```
 
 ## 📊 模型性能
 
